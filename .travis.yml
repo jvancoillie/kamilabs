@@ -15,6 +15,10 @@ env:
     - SYMFONY_DEPRECATIONS_HELPER=9
     - ACTION="install"
     - PATH="$HOME/.symfony/bin:$PATH"
+
+addons:
+  ssh_known_hosts: access818669403.webspace-data.io
+
 jobs:
   fast_finish: true
   include:
