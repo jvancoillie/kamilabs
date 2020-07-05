@@ -2,6 +2,12 @@
 # PHP like 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, etc., each of them including XDebug and PHPUnit.
 language: php
 
+# safelist
+branches:
+  only:
+    - master
+    - stable
+    
 # Travis can cache content between builds. This speeds up the build process and saves resources.
 cache:
   yarn: true
