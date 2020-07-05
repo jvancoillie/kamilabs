@@ -33,6 +33,8 @@ before_install:
 install:
   - php -r "echo ini_get('memory_limit').PHP_EOL;"
   - COMPOSER_MEMORY_LIMIT=-1 composer $ACTION
+  - yarn install
+  - yarn run build
   - "./bin/phpunit install"
 
 script:
