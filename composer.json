@@ -1,6 +1,8 @@
 {
     "type": "project",
     "license": "proprietary",
+    "name": "jvancoillie/kamilabs",
+    "description": "My personnal website",
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
