@@ -155,4 +155,4 @@ db-validate-schema: .env vendor
 
 
 ## deploy qualif env
-deploy@qualif: db cache-clear
+deploy: cache-clear
