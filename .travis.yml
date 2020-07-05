@@ -2,7 +2,7 @@ language: php
 branches:
   only:
   - master
-  - stable
+  - deploy
 cache:
   yarn: true
   directories:
@@ -35,7 +35,7 @@ deploy:
   skip_cleanup: true
   script: bash .travis/deploy.sh
   on:
-    branch: master
+    branch: deploy
 
 before_install:
   - phpenv config-rm xdebug.ini || true
