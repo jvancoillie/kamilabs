@@ -1,8 +1,9 @@
-let tailwindcss = require('tailwindcss');
-
 module.exports = {
-    plugins: [
-        tailwindcss('./tailwind.config.js'), // your tailwind.js configuration file path
-        require('autoprefixer'),
-    ]
+    plugins: {
+        // include whatever plugins you want
+        // but make sure you install these via yarn or npm!
+
+        // add browserslist config to package.json (see below)
+        autoprefixer: {}
+    }
 }
