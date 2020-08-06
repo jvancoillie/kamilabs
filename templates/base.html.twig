@@ -2,15 +2,15 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Kamilabs!{% endblock %}</title>
         {% block stylesheets %}
-            {{ encore_entry_link_tags('tailwind') }}
+            {{ encore_entry_link_tags('css/app') }}
         {% endblock %}
     </head>
-    <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;" >
+    <body>
         {% block body %}{% endblock %}
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            {{ encore_entry_script_tags('js/app') }}
         {% endblock %}
     </body>
 </html>
