@@ -1,45 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" data-nav-status="toggle">
-        <div class="container-fluid">
-            <a class="navbar-brand js-scroll-trigger" href="{{ path('homepage') }}">
-                Kamilabs
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ml-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ path('blog') }}">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cheatsheet">Cheat sheet</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="overlay"></div>
-        <div class="container content d-flex justify-content-between ">
 
-            <div>
-                <div class="masthead-subheading">Jérémy Vancoillie</div>
-                <div class="masthead-heading text-uppercase">Développeur</div>
-                <div class="masthead-subheading">En construction</div>
-            </div>
-            <div class="masthead-avatar">
-                <img class="mx-auto rounded-circle" src="{{ asset('build/avatar.png') }}" alt="my avatar">
-            </div>
-        </div>
-        <div class="masthead-wave">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                <path d="M0,50 C150,150 350,-50 500,50 L500,200 L00,200 Z" style="stroke: none;fill: white;"></path>
-            </svg>
-        </div>
-    </header>
+
     <!-- Services-->
     <section class="page-section pt-0" id="services">
         <div class="container">
