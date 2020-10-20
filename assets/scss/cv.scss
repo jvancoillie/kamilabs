@@ -65,7 +65,7 @@ address {
       hr {
         width: 6rem;
         margin: 2rem 0;
-        border: 1px solid white;
+        border: 1px solid #B82D17;
       }
     }
     .avatar {
@@ -87,7 +87,7 @@ address {
 
     .title {
       display: flex;
-      border-bottom: 1px solid $bg-color;
+      border-bottom: 1px solid #B82D17;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 1em;
@@ -95,6 +95,9 @@ address {
         text-transform: uppercase;
         font-weight: bold;
         margin: .5em 0;
+      }
+      i {
+        color: #B82D17;
       }
     }
   }
@@ -201,6 +204,7 @@ h3 {
     overflow: hidden;
     position: absolute;
     top: 0;
+    color: #B82D17;
   }
 }
 
