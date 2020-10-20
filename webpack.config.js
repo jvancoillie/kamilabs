@@ -14,6 +14,7 @@ Encore
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
     .addStyleEntry('css/app', './assets/scss/app.scss')
+    .addStyleEntry('css/cv', './assets/scss/cv.scss')
     /*
      * ENTRY CONFIG
      *
@@ -24,6 +25,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('js/app', './assets/js/app.js')
+    .addEntry('js/cv', './assets/js/cv.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
