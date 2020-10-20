@@ -42,7 +42,7 @@ class Builder
             ->setLinkAttribute('class', 'nav-link')
             ->setAttribute('class', 'nav-item');
 
-        $menu->addChild('CV', ['uri' => '#cv'])
+        $menu->addChild('CV', ['route' => 'curriculum_vitae'])
             ->setLinkAttribute('class', 'nav-link')
             ->setAttribute('class', 'nav-item');
 
