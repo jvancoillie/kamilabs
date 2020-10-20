@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Curriculum vitae - Kamilabs!{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('css/cv') }}
+    {% endblock %}
+</head>
+<body>
+    <div class="resume">
+        <header>
+            <div class="masthead">
+                <h1>Jérémy Vancoillie</h1>
+                <h2>Développeur logiciel</h2>
+                <hr>
+                <address>
+                    <div>
+                        <i class="fas fa-house-user"></i> <span class="text">Z.A de la georgière, 86600 Lusignan</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope-open-text"></i> <a href="mailto:vancoillie.jeremy@gmail.com">vancoillie.jeremy@gmail.com</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone fa-rotate-90"></i> <a href="tel:+33600000000">0600000000</a>
+                    </div>
+                </address>
+            </div>
+            <div class="avatar">
+                <img src="{{ asset('build/avatar.png') }}" alt="my avatar">
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="flex-2-3 pr-1">
+                    <section class="mb-2">
+                        <div class="title">
+                            <h2>Expériences professionnelles</h2>
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    Développeur
+                                </h3>
+                                <p class="text-light">
+                                    septembre 2011 - aujourd'hui
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase" >Réctorat de l’académie de Poitiers</h3>
+                                <p class="text-light">
+                                    Développement d’applications, assistance à maitrise d’ouvrage,
+                                    maintenance et évolution du parc applicatif académique,
+                                    Tests unitaires, fonctionnels et d’intégration.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    Mécanicien
+                                </h3>
+                                <p class="text-light">
+                                    juin 2003 - août 2011
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase">
+                                    Auto leclerc, saint-maixent-l’école
+                                </h3>
+                                <p class="text-light">
+                                    Ets des devis, Accueil du client, Vidanges, Passage au banc des
+                                    véhicules selon la marque.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    Apprentissage
+                                </h3>
+                                <p class="text-light">
+                                    septembre 2000 - juin 2002
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase">
+                                    Infraco, Poitiers
+                                </h3>
+                                <p class="text-light">
+                                    CAP Mécanique Hydraulique en apprentissage.
+                                </p>
+                            </article>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="flex-1-3 pl-1">
+                    <section>
+                        <div class="title">
+
+                            <h2>À propos</h2>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="interet">
+                            <p class="text-bold">
+                                Ullique restionempor rem anisquod ute inverum
+                                arum est, omnimus aut volupid quatur, quatemp
+                                orecaborum alique core sapedic temquo
+                                exeribus eum qui nobis in nobitatium natis ex et
+                                as qui doluptas moluptatur?
+                            </p>
+                            <p>
+                                Qui ut modissi omnis et aditaeped ut quam qui
+                                ne nonsequi nia dolupta nos ex eium eos idi re,
+                                venihil laboren diciliam, core voluptas inctiam
+                                am dolupta voluptae natem rem alibeat pa quid
+                                quaecus saniates ea dolupta tibus, omnimporume
+                                voloreperrum quam ulpa dunt.
+                                Et fuga. Ita dus ma dolorempori sequam ut volorum
+                                vit faccaep raectem
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="flex-2-3 pr-1">
+                    <section class="mb-2">
+                        <div class="title">
+                            <h2>Formations et diplômes</h2>
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    LICENCE
+                                </h3>
+                                <p class="text-light">
+                                    septembre 2013 - juin 2015
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase">
+                                    CNAM POITIERS
+                                </h3>
+                                <p class="text-light">
+                                    Licence générale Sciences technologies santé mention
+                                    informatique générale Mention informatique générale.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    TITRE PROFESSIONNEL
+                                </h3>
+                                <p class="text-light">
+                                    septembre 2011 - juin 2011
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase">
+                                    AFPA, ROUBAIX
+                                </h3>
+                                <p class="text-light">
+                                    Obtention du titre professionnel de Développeur logiciel.
+                                </p>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <aside class="flex-1-3 pr-1">
+                                <h3 class="text-bold text-uppercase">
+                                    CAP MÉCANIQUE
+                                </h3>
+                                <p class="text-light">
+                                    septembre 2000 - juin 2002
+                                </p>
+                            </aside>
+                            <article class="flex-2-3 timeline pb-2 pl-1">
+                                <h3 class="text-bold text-uppercase">
+                                    LYCÉE PROFESSIONNEL, LOUVIGNÉ DU DÉSERT
+                                </h3>
+                                <p class="text-light">
+                                    CAP Maintenance des matériels de travaux publics et de
+                                    manutention
+                                    Préparation et organisation des interventions sur les engins.
+                                    Entretien et réparation mécaniques, électriques, hydrauliques
+                                </p>
+                            </article>
+                        </div>
+
+                    </section>
+                </div>
+                <div class="flex-1-3 pl-1">
+                    <section>
+                        <div class="title">
+
+                            <h2>COMPÉTENCECES</h2>
+                            <i class="far fa-chart-bar"></i>
+                        </div>
+                        <div class="interet">
+                            <p>
+                                Disponible, de bonne volonté, sérieux efficient,
+                                autonome, curieux et doté d’un bon relationnel, je
+                                sais mettre mon sens critique et ma compréhension
+                                des situations au service d’analyses et de
+                                préconisations.
+                            </p>
+                            <dl class="skill">
+                                <dt>
+                                    HTML5
+                                </dt>
+                                <dd>
+                                    <div class="rating">
+                                        <div class="back-rating">
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <div class="front-rating" style="width: 80%">
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+
+                                <dt>
+                                    CSS3
+                                </dt>
+                                <dd>
+                                    <div class="rating">
+                                        <div class="back-rating">
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <div class="front-rating" style="width: 60%">
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+
+                                <dt>
+                                    PHP
+                                </dt>
+                                <dd>
+                                    <div class="rating">
+                                        <div class="back-rating">
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <div class="front-rating" style="width: 90%">
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+
+                                <dt>
+                                    SYMFONY
+                                </dt>
+                                <dd>
+                                    <div class="rating">
+                                        <div class="back-rating">
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <div class="front-rating" style="width: 80%">
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+
+                                <dt>
+                                    BOOTSTRAP
+                                </dt>
+                                <dd>
+                                    <div class="rating">
+                                        <div class="back-rating">
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <i class="far fa-circle" aria-hidden="true"></i>
+                                            <div class="front-rating" style="width: 70%">
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
