@@ -23,7 +23,11 @@ jQuery(document).ready(function ($) {
     var previousScroll = 0;
     var nav = $("[data-nav-status='toggle']");
     var navHeight = nav.outerHeight();
-
+    if(nav.offset().top > navHeight){
+        nav.addClass("is-scrolled");
+        window.setTimeout(hideNav, 300);
+        previousScroll = $(window).height();
+    }
     $(window).scroll(function () {
 
         var currentScroll = $(this).scrollTop();
@@ -54,8 +58,6 @@ jQuery(document).ready(function ($) {
         }else{
             nav.removeClass("is-scrolled");
         }
-
-        console.log(currentScroll,navHeight )
 
     });
 
