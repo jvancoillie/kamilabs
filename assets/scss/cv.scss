@@ -15,6 +15,19 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.btn-back {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #b82d17;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+}
 address {
   font-style: normal;
   display: flex;
