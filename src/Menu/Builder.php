@@ -38,7 +38,7 @@ class Builder
             ->setLinkAttribute('class', 'nav-link')
             ->setAttribute('class', 'nav-item');
 
-        $menu->addChild('Cheat sheet', ['uri' => '#1'])
+        $menu->addChild('Cheat sheet', ['route' => 'cheat_sheet'])
             ->setLinkAttribute('class', 'nav-link')
             ->setAttribute('class', 'nav-item');
 
