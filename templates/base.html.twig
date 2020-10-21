@@ -29,15 +29,17 @@
             <!-- Masthead-->
             <header class="masthead">
                 <div class="overlay"></div>
-                <div class="container content d-flex justify-content-between ">
-                    <div>
-                        <div class="masthead-subheading">Jérémy Vancoillie</div>
-                        <div class="masthead-heading text-uppercase">Développeur</div>
-                        <div class="masthead-subheading">En construction</div>
-                    </div>
-                    <div class="masthead-avatar">
-                        <img class="mx-auto rounded-circle" src="{{ asset('build/avatar.png') }}" alt="my avatar">
-                    </div>
+                <div class="container content d-flex justify-content-between">
+                    {% block masthead_content %}
+                        <div>
+                            <div class="masthead-subheading">Jérémy Vancoillie</div>
+                            <div class="masthead-heading text-uppercase">Développeur</div>
+                            <div class="masthead-subheading">En construction</div>
+                        </div>
+                        <div class="masthead-avatar">
+                            <img class="mx-auto rounded-circle" src="{{ asset('build/avatar.png') }}" alt="my avatar">
+                        </div>
+                    {% endblock masthead_content %}
                 </div>
                 <div class="masthead-wave">
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none">

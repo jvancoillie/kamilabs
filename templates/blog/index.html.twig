@@ -2,8 +2,40 @@
 
 {% block title %}Blog | {{ parent() }} {% endblock %}
 
+ {% block masthead_content %}
+     <div>
+         <div class="masthead-heading text-uppercase">Blog</div>
+     </div>
+ {% endblock masthead_content %}
+
 {% block body %}
     <div class="container">
-        <h1>Blog</h1>
+        {% for i in 1..5 %}
+            <a href="#" class="list-entry">
+                <div class="row mb-2 border no-gutters">
+                    <div class="col-md-3">
+                        <div class="d-flex flex-column justify-content-center align-items-center icon-container bg-primary text-white">
+                            <i class="far fas fa-pen-fancy fa-5x mb-3 mt-5"></i>
+                            <span class="mb-4">Article</span>
+                        </div>
+                    </div>
+                    <div class="col-md-9 p-2 d-flex flex-column ">
+                        <div class="title">
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laudantium.</h5>
+                        </div>
+                        <div class="description flex-grow-1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut beatae consequuntur, dolor eius ipsa ipsum libero minima modi natus, neque omnis quas, qui quis sed similique vero voluptate voluptatibus!
+                            </p>
+                        </div>
+                        <div class="tags">
+                            <span class="badge badge-primary">Microsoft</span>
+                            <span class="badge badge-primary">Azure</span>
+                            <span class="badge badge-primary">Development</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
     </div>
 {% endblock %}
